@@ -33,7 +33,7 @@ var app = http.createServer(function(request,response){
         response.writeHead(200);//200: 성공적으로 불러왔다.
         response.end(template);//queryString id의 000부분 불러옴 (?id=000)
      
-        });
+        });//test
       } else{
         fs.readFile(`data/${queryData.id}`, 'utf8', function(err, description){
           var tittle = queryData.id;
